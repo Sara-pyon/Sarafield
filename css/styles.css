@@ -97,3 +97,40 @@ p{
     background: var(--color-heading);
     color: #fff;
 }
+@media screen and (min-width: 1024px) {
+    .btn{
+        font-size: 1.5rem;
+    }
+}
+
+/* Badge */
+.badge{
+    font-size: 2.0rem;
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+}
+.badge--small{
+    font-size: 1.6rem
+}
+.badge--primary-hover{
+    background: var(--color-primary-hover);
+    color: #fff;
+}
+.badge--secondary-hover{
+    background: var(--color-secondary-hover);
+    color: #fff;
+}
+.badge--secondary{
+    background: var(--color-secondary);
+    color: #fff;
+}
+@media screen and (min-width: 1024px) {
+    .badge{
+        font-size: 1.5rem;
+    }
+    .badge--small{
+        font-size: 1.2rem;
+    }
+}
+
