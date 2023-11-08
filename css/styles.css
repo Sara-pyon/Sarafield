@@ -10,6 +10,7 @@
     --color-primary-hover: #126de4;
     --color-secondary-hover: #02cdf1;
     --color-accent-hover: #ef3404;
+    --color-border: #ccc;
 }
 *,*::before,*::after{
     box-sizing: border-box;
@@ -158,4 +159,23 @@ p{
     justify-content: center;
     align-items: center;
 }
+
+/* input */
+.input{
+    font-size: 2.0rem;
+    border:1px solid var(--color-border) ;
+    padding: 2rem 4rem; 
+    border-radius: 30px;
+    color: var(--color-heading);
+}
+::placeholder{
+    color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+    .input{
+        font-size: 1.5rem;
+    }
+}
+
 
