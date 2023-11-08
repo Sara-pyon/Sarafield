@@ -134,3 +134,28 @@ p{
     }
 }
 
+/*icon*/
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
+.icon--primary{
+    fill: var(--color-primary);
+}
+.secondary{
+    fill: var(--color-secondary);
+}
+.icon-container{
+    background: #f3f9fa;
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
