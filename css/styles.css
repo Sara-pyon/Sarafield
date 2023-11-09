@@ -40,6 +40,9 @@ h1,h2,h3{
 p{
     margin-top: 0;
 }
+a{
+    text-decoration: none;
+}
 
 @media screen and (min-width:1024px) {
     body{
@@ -262,4 +265,20 @@ p{
 .card__primary .card__header{
     background: var(--color-primary);
     color: #fff;
+}
+
+/* Link */
+.link-arrow{
+    text-transform: uppercase;
+    color: var(--color-accent);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.link-arrow::after{
+    content: '-->';
+    margin-left: 5px;
+    transition: margin-left 0.15s;
+}
+.link-arrow:hover::after{
+    margin-left: 10px;
 }
