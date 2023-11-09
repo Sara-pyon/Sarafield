@@ -58,7 +58,7 @@ p{
 
 /* Buttons */
 .btn{
-    padding:2rem 4vw;
+    padding:2rem 3rem;
     border-radius: 40px;
     border: 0;
     text-transform: uppercase;
@@ -98,6 +98,13 @@ p{
     background: var(--color-heading);
     color: #fff;
 }
+.btn .icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 2rem;
+    vertical-align: middle;
+}
+
 @media screen and (min-width: 1024px) {
     .btn{
         font-size: 1.5rem;
@@ -147,6 +154,9 @@ p{
 .icon--primary{
     fill: var(--color-primary);
 }
+.icon--white{
+    fill: #fff;
+}
 .secondary{
     fill: var(--color-secondary);
 }
@@ -167,7 +177,9 @@ p{
     padding: 2rem 4rem; 
     border-radius: 30px;
     color: var(--color-heading);
+    outline: 0;
 }
+
 ::placeholder{
     color: #cdcbd7;
 }
@@ -206,3 +218,21 @@ p{
         font-size: 2rem;
     }
 }
+
+/* input-group */
+.input-group{
+    border: 1px solid var(--color-border);
+    border-radius: 60px;
+    display: flex;
+    margin:20px;
+}
+.input-group .input{
+    flex-grow: 1;
+    margin-left: 1rem;
+    width: 0;
+    border: none;
+}
+.input-group .btn{
+    margin: 4px;
+}
+
