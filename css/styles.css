@@ -178,4 +178,31 @@ p{
     }
 }
 
+/* Lists */
+.list{
+    list-style: none;
+    color: var(--color-heading);
+    font-size: 2.4rem;
+    padding-left: 0;
+    letter-spacing: 2px;
+}
+.list--inline .list__item{
+    display: inline-block;
+}
+.list__item{
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+}
+.list--tick{
+    list-style-image: url(../images/tick.svg);
+    padding-left: 4rem;
+}
 
+@media screen and (min-width: 1024px) {
+    .list--tick .list__item{
+        padding-left: 1rem;
+    }
+    .list{
+        font-size: 2rem;
+    }
+}
