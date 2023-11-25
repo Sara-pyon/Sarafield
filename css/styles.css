@@ -74,6 +74,7 @@ a{
     font-size: 2.0rem;
     color: var(--color-accent);
     font-weight: bold;
+    text-transform: uppercase;
 }
 .link-arrow::after{
     content: '-->';
@@ -88,6 +89,41 @@ a{
         font-size: 1.5rem;
     }
 }
+
+/* badge */
+.badge{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    font-size: 2.0rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.badge-secondary{
+    background: var(--color-secondary);
+}
+.badge-primary-darker{
+    background: var(--color-primary-hover);
+}
+.badge-secondary-darker{
+    background: var(--color-secondary-hover);
+}
+.badge-small{
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+}
+@media screen and (min-width: 1024px) {
+    .badge{
+        font-size: 1.5rem;
+    }
+    .badge-small{
+        font-size: 1.2rem;
+    }
+    
+}
+
+
 
 
 
