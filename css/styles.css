@@ -125,14 +125,32 @@ a{
 
 /* input */
 .input{
-    width: 100%;
     border-radius: 40px;
-    padding:1.5rem 3rem;
-    outline: 0;
     color: var(--color-heading);
     font-size: 2.0rem;
+    padding:1.5rem 3rem;
 }
-
+::placeholder{
+    color: #cdcbd7;
+}
+.input-group{
+    border: 1px solid var(--color-border);
+    border-radius: 40px;
+    display: flex;
+}
+.input-group .input{
+    flex-grow: 1;
+    border: none;
+    outline: 0;
+    padding-right: 10px
+}
+.input-group .btn{
+    margin:4px;
+}
+.input-group--box-shadow{
+    box-shadow:  0 0 20px 10px #dcdbdb;
+    border: none;
+}
 /* Icon */
 .icon{
     height: 40px;
@@ -196,6 +214,12 @@ a{
 .btn--starched{
     padding-left: 6rem;
     padding-right: 6rem;
+}
+.btn .icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 @media screen and (min-width:1024px) {
