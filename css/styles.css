@@ -64,5 +64,30 @@ p{
     }
 }
 
+a{
+    text-decoration: none;
+}
+
+/* Link */
+
+.link-arrow{
+    font-size: 2.0rem;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+.link-arrow::after{
+    content: '-->';
+    margin-left: 3px;
+}
+.link-arrow:hover::after{
+    margin-left: 10px;
+}
+
+@media screen and (min-width:1024px){
+    .link-arrow{
+        font-size: 1.5rem;
+    }
+}
+
 
 
