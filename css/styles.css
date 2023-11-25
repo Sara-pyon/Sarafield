@@ -157,4 +157,49 @@ a{
     background: var(--color-accent);
 }
 
+/* button */
+.btn{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1.5rem 6vw;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+    margin: 1rem 0;
+}
+.btn--accent{
+    background-color: var(--color-accent);
+    color: #fff;
+}
+.btn--accent:hover{
+    background: #ec3000;
+}
+.btn--secondary{
+    background: var(--color-secondary);
+    color: #fff;
+}
+.btn--secondary:hover{
+    background: var(--color-secondary-hover);
+}
+.btn--white{
+    background: #fff;
+    color: var(--color-heading);
+    border: 1px solid var(--color-heading);
+}
+.btn--white:hover{
+    color:#fff;
+    background: var(--color-heading);
+}
+.btn--starched{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
 
+@media screen and (min-width:1024px) {
+    .btn{
+        font-size: 1.5rem;
+    }
+}
