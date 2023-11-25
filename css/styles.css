@@ -123,6 +123,16 @@ a{
     
 }
 
+/* input */
+.input{
+    width: 100%;
+    border-radius: 40px;
+    padding:1.5rem 3rem;
+    outline: 0;
+    color: var(--color-heading);
+    font-size: 2.0rem;
+}
+
 
 
 
