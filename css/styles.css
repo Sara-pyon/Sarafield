@@ -551,3 +551,41 @@ a{
         grid-template-columns: repeat(3,1fr);
     }
 }
+
+/* Callout */
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+.callout--primary{
+    background: var(--color-primary);
+}
+.callout__header{
+    color: #fff;
+    text-align: center;
+}
+.callout__header h2{
+    color: #fff;
+    font-size: 4.0rem;
+    margin-bottom: 2rem;
+}
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+    padding: 2rem 6rem;
+    margin-top: 3rem;
+}
+
+@media screen and (min-width: 771px) {
+
+    .callout__header{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+        margin-left: 3rem;
+    }
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+}
