@@ -5,3 +5,6 @@ const collapsibles = document.querySelectorAll('.collapsible');
             this.classList.toggle('collapsible--expanded');
         })
     })
+
+const heroHeading = document.querySelector('.js-hero__heading');
+heroHeading.innerText = `Cloud Hosting \n for Pros`;
