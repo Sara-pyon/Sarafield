@@ -453,7 +453,7 @@ a{
 
 /* quotes */
 .quote__text{
-    font-size: 3.0rem;
+    font-size: 2.6rem;
     font-style: italic;
     line-height: 1.3;
 }
@@ -489,6 +489,51 @@ a{
     }
     .quote__company{
         font-size: 1.6rem;
+    }
+}
+
+/* testimonial */
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:  0 0 30px 10px #dcdbdb;
+    border-radius: 8px;
+}
+
+.testimonial__image > .icon-container{
+    position: absolute;
+    top: 3rem;
+    right: -30px;
+}
+.testimonial__image > .icon-container >.icon{
+    width: 35px;
+}
+.testimonial__image{
+    margin: 3rem 5rem;
+    position: relative;
+}
+.testimonial__image > img{
+    width: 100%;
+}
+
+@media screen and (min-width: 771px) {
+    .testimonial .quote__text,
+    .testimonial .quote__author{
+        font-size: 2.2rem;
+    }
+    .testimonial .quote{
+        margin-left: 5rem;
+    }
+    .testimonial{
+        flex-direction: row;
+        padding:1rem 2rem;
+    }
+    .testimonial__description{
+        margin-top: 3rem;
+    }
+    .testimonial__image{
+       margin: 0;
     }
 }
 
