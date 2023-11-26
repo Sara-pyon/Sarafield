@@ -463,3 +463,32 @@ a{
 .quote__text::after{
     content: close-quote;
 }
+.quote .media{
+    margin-top: 3rem;
+}
+.quote__line{
+    position: relative;
+    bottom: 15px;
+}
+.quote__author{
+    font-size: 3.0rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+.quote__company{
+    font-size: 2.0rem;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    color: var(--color-body);
+}
+
+@media screen and (min-width: 1024px) {
+    .quote__text, .quote__author{
+        font-size: 2.4rem;
+    }
+    .quote__company{
+        font-size: 1.6rem;
+    }
+}
+
