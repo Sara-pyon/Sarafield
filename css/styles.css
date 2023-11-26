@@ -589,3 +589,45 @@ a{
         grid-template-columns: 1fr auto;
     }
 }
+
+/* block */
+.block--black{
+    background: #000;
+    color: #fff;
+}
+.block--screw-left{
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    padding-bottom: 5rem;
+}
+.block--screw-right{
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 80%);
+    padding-bottom: 5rem;
+}
+.block__header{
+    text-align: center;
+}
+.block__heading{
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.block--black .block__heading{
+    color: #fff;
+}
+
+
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 771px) {
+    .block--screw-left{
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+        padding-bottom: 5rem;
+    }
+    .block--screw-right{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
+        padding-bottom: 20rem;
+    }
+}
