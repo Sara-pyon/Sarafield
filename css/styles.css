@@ -346,109 +346,24 @@ a{
     }
 }
 
-/* nav */
-.nav{
-    background: var(--color-header);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 1rem;
-    padding-top: 1rem;
-}
-.nav__taggler{
-    justify-self: center;
-    align-self: center;
-    cursor: pointer;
-    opacity: 0.8;
-}
-.nav__taggler:hover{
-    opacity: 1;
-}
-.nav__list{
-    width: 100%;
-}
-.nav__brand{
-    transform: translateY(3px);
-}
-.nav__brand > img{
-    height: 50px;
-}
-.nav__item{
-    border-bottom: 1px solid var(--color-border);
-    font-weight: 300;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    padding-bottom: 0.5rem;
-}
-.nav__item:last-child{
-    border-bottom: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-.nav__item >a{
-    color: #fff;
-    opacity: 0.8;
-    transition: opacity 0.2s;
-}
-.nav__item >a:hover{
-    opacity: 1;
-}
-
-
-@media screen and (min-width:771px){
-    .nav{
-       align-items: center;
-    }
-    .nav__taggler{
-        display: none;
-    }
-    .nav__list{
-        width: auto;
-        display: flex;
-        margin: 0;
-        margin-top: 0.8rem;
-        margin-right: 0.5rem
-    }
-    .nav__brand{
-        transform: none;
-    }
-    .nav__item{
-        border-bottom: none;
-    }
-    .nav__item > a{
-        font-size: 1.8rem;
-    }
-}
-
 /* collapsible */
-.collapsible{
-    background: #000;
-}
-.collapsible__heading{
-    margin-bottom: 0;
-    color: #fff;
-}
 .collapsible__header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+}
+.collapsible__chevron{
+    transform: rotate(-90deg);
 }
 .collapsible__content{
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    padding: 0.5rem 0;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
-.collapsible__chevron{
-    transform: rotate(-90deg);
+.collapsible--expanded .collapsible__chevron{
+    transform: rotate(0);
 }
-.collapsible__expanded .collapsible__content {
+.collapsible--expanded .collapsible__content{
     max-height: 100vh;
     opacity: 1;
-    padding-bottom: 1rem;
-}
-.collapsible__expanded .collapsible__chevron{
-    transform: rotate(0);
 }
