@@ -7,28 +7,36 @@ const detailFeatures =[{
     title: 'Super Easy to Use',
     dicription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat beatae repudiandae unde porro fugiat optio fugit quae quos culpa cumque!',
     iconName: 'easy',
-    imageName: 'easy'
+    imageName: 'easy',
+    transformText: 'fade-up-right',
+    transformImage: 'fade-up-left'
 },{
     title: 'Simply Fast Websites',
     dicription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat beatae repudiandae unde porro fugiat optio fugit quae quos culpa cumque!',
     iconName: 'computer',
-    imageName: 'fast'
+    imageName: 'fast',
+    transformText: 'fade-up',
+    transformImage: ''
 },{
     title: 'Wordpress Made Easy',
     dicription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat beatae repudiandae unde porro fugiat optio fugit quae quos culpa cumque!',
     iconName: 'settings',
-    imageName: 'wordpress'
+    imageName: 'wordpress',
+    transformText: 'fade-up',
+    transformImage: ''
 },{
     title: '24/7 Expert Support',
     dicription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat beatae repudiandae unde porro fugiat optio fugit quae quos culpa cumque!',
     iconName: 'clock',
-    imageName: 'support'
+    imageName: 'support',
+    transformText: 'fade-left',
+    transformImage: 'fade-right'
 }];
 
 detailFeatures.forEach(item =>{
     detailHTML += `
-<div class="container grid grid--1x2 detail__item ">
-    <div class="media detail__discription">
+<div class="container grid grid--1x2 detail__i tem ">
+    <div class="media detail__discription" data-aos=${item.transformText}>
         <div class="media__image">
             <span class="icon-container">
                 <svg class="icon icon--primary">
@@ -42,7 +50,7 @@ detailFeatures.forEach(item =>{
             <a href="#" class="link-arrow">Learn More</a>
         </div>
     </div>
-    <div class="detail__image">
+    <div class="detail__image" data-aos=${item.transformImage}>
         <picture>
             <source type="image/webp" srcset="images/${item.imageName}.webp 1x, images/${item.imageName}@2x.webp 2x">
             <source type="image/png" srcset="images/${item.imageName}.jpg 1x, images/${item.imageName}@2x.jpg 2x">
@@ -92,7 +100,7 @@ const footerFutures = [{
 }];
 
 footerFutures.forEach(item => {
-    footerListHTML ='';
+    let footerListHTML ='';
 
     item.section.forEach(list => {
         footerListHTML += `<list class="nav__item"><a href="#">${list}</a></list>`
@@ -120,3 +128,12 @@ footerHTML += `
 </div>`;
 
 footer.innerHTML = footerHTML;
+
+const collapsibles = document.querySelectorAll('.collapsible');
+
+ collapsibles.forEach(item => {
+         item.addEventListener('click', function(){
+             this.classList.toggle('collapsible--expanded');
+         })
+     })
+

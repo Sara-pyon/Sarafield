@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="discription" content="This is my first a Website">
+    <meta property="og:title" content="Sarafy">
+    <meta property="og:description" content="This is my first a Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Sara.jpg">
+    <meta property="og:url" content="https://sara.com">
+    <title>this is Sara</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <section class="block block--black block--screw-left">
+    <section class="block block--black block--screw-left ">
         <div class="nav collapsible">
             <a href="/" class="nav__brand"><img src="images/logo.png" alt="Moshiy"></a>
             <svg class="icon icon--white nav__toggler">
@@ -26,18 +32,18 @@
         </div>
         <div class="grid grid--1x2 hero container">
             <div class="block__header hero__content">
-                <h1 class="block__heading js-hero__heading">Cloud Hosting for Pros</h1>
+                <h1 class="block__heading js-hero__heading" data-aos="zoom-in">Cloud Hosting for Pros</h1>
                 <p>Deploy your website in less than 60 seconds.</p>
                 <button class="btn btn--accent btn--starched">get started</button>
             </div>
-            <picture>
+            <picture data-aos="zoom-in">
                 <source type="images/webp" srcset="images/banner@1x.webp 1x, images/banner@2x.webp 2x">
                 <source type="images/png" srcset="images/banner@1x.png 1x, images/banner@2x.png 2x">
                 <img class="hero__image" src="images/banner.png" alt="">
             </picture>
         </div>
     </section>
-    <section class="Domain">
+    <section class="Domain" data-aos="zoom-in">
         <div class="container">
             <div class="Domain__content">
                 <h2 class="Domain__title">The best webhosting Starting at per month</h2>
@@ -52,7 +58,7 @@
             </div>
         </div>
     </section>
-    <section class="planCrads">
+    <section class="planCards">
         <div class="container">
             <div class="planCards__header">
                 <ul class="list list--inline">
@@ -128,6 +134,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
     <section class="header2">
@@ -143,12 +150,12 @@
             <div class="container">
                 <h2 class="showcase__title">User-friendly Control Panel</h2>
                 <div class="grid grid--1x2 showcase__body">
-                    <picture class="showcase__image">
+                    <picture class="showcase__image" data-aos="fade-right" >
                         <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x">
-                        <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.jpg 2x">
+                        <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x">
                         <img src="images/ipad.png" alt="">
                     </picture>
-                    <div class="showcase__discription">
+                    <div class="showcase__discription" data-aos="fade-up" >
                         <div class="media">
                             <div class="media__image">
                                 <svg class="icon icon--primary">
@@ -188,7 +195,7 @@
         </div>
     </section>
     <section class="testimonialPart">
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
             <header class="testimonialPart__header">
                 <h2>What our Customers are Saying</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, non!</p>
@@ -245,7 +252,10 @@
         </div>
     </section>
    <script src="js/main.js"></script>
-   <script src="js/collapsible.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
    

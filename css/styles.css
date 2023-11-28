@@ -629,6 +629,7 @@ a{
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 1rem;
+    overflow: hidden;
 }
 
 
@@ -671,6 +672,10 @@ a{
     margin-left: 1rem;
     margin-right: 1rem;
 }
+.Domain .container{
+    max-width: 90rem;
+    padding-bottom: 4rem;
+}
 
 /* Plan Crads */
 .planCards__header .list{
@@ -689,9 +694,20 @@ a{
     margin: 0 auto;
     /* margin-top: 4rem; */
 }
-
+.planCards .plan{
+    transition: transform 0.3s;
+}
 .planCards__body{
     gap: 5rem;
+}
+.planCards .plan--popular{
+    transform: scale(1.07);
+}
+.planCards .plan:hover{
+    transform: scale(1.05);
+}
+.planCards .plan--popular:hover{
+    transform: scale(1.12);
 }
 
 
