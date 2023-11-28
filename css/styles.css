@@ -767,6 +767,15 @@ a{
         max-width: 700px;
         width: auto;
     }
-    
+}
 
+/* testimonialPart */
+.testimonialPart{
+    margin-top: 5rem;
+}
+.testimonialPart__header{
+    text-align: center;
+}
+.testimonialPart__body{
+    margin-top: 5rem;
 }
