@@ -10,8 +10,49 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   
+    <section class="block block--black block--screw-left">
+        <div class="nav collapsible">
+            <a href="/" class="nav__brand"><img src="images/logo.png" alt="Moshiy"></a>
+            <svg class="icon icon--white nav__toggler">
+                <use xlink:href="images/sprite.svg#menu"></use>
+            </svg>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="">Hosting</a></li>
+                <li class="nav__item"><a href="">VPS</a></li>
+                <li class="nav__item"><a href="">Domain</a></li>
+                <li class="nav__item"><a href="">Pricing</a></li>
+            </ul>
+        </div>
+        <div class="grid grid--1x2 hero container">
+            <div class="block__header hero__content">
+                <h1 class="block__heading js-hero__heading">Cloud Hosting for Pros</h1>
+                <p>Deploy your website in less than 60 seconds.</p>
+                <button class="btn btn--accent btn--starched">get started</button>
+            </div>
+            <picture>
+                <source type="images/webp" srcset="images/banner@1x.webp 1x, images/banner@2x.webp 2x">
+                <source type="images/png" srcset="images/banner@1x.png 1x, images/banner@2x.png 2x">
+                <img class="hero__image" src="images/banner.png" alt="">
+            </picture>
+        </div>
+    </section>
+    <section class="Domain">
+        <div class="container">
+            <div class="Domain__content">
+                <h2 class="Domain__title">The best webhosting Starting at per month</h2>
+                <p class="Domain__discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nobis ex nemo iusto tempora consequatur quia magni saepe, officiis vitae!</p>
+            </div>
+            <div class="input-group input-group--box-shadow Domain__input">
+                <input class="input" type="text" placeholder="Enter domain name here...">
+                <button class="btn btn--accent input-group__btn">
+                    <svg class="icon icon--white">
+                        <use xlink:href="images/sprite.svg#search"></use>
+                    </svg>search</button>
+            </div>
+        </div>
+    </section>
    <script src="js/main.js"></script>
+   <script src="js/collapsible.js"></script>
 </body>
 
    
