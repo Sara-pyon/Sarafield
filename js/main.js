@@ -28,7 +28,7 @@ const detailFeatures =[{
 
 detailFeatures.forEach(item =>{
     detailHTML += `
-    <div class="container grid grid--1x2 detail__item ">
+<div class="container grid grid--1x2 detail__item ">
     <div class="media detail__discription">
         <div class="media__image">
             <span class="icon-container">
