@@ -1,3 +1,8 @@
+import '../images/easy.jpg';
+import '../images/easy@2x.jpg';
+import '../images/easy.webp';
+import '../images/easy@2x.webp';
+
 // Detail
 const detail = document.querySelector('.js-detail');
 let detailHTML = '';
