@@ -678,6 +678,9 @@ a{
 }
 
 /* Plan Crads */
+.planCards .container{
+    padding-bottom: 3rem;
+}
 .planCards__header .list{
     display: grid;
     grid-template-columns: repeat(3,1fr);
