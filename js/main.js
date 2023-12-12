@@ -35,7 +35,7 @@ const detailFeatures =[{
 
 detailFeatures.forEach(item =>{
     detailHTML += `
-<div class="container grid grid--1x2 detail__i tem ">
+<div class="container grid grid--1x2 detail__item ">
     <div class="media detail__discription" data-aos=${item.transformText}>
         <div class="media__image">
             <span class="icon-container">
